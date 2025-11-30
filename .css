@@ -1,0 +1,192 @@
+/* === Background & Base === */
+body {
+  background-image: url('https://i.postimg.cc/PrFdZGsV/7cd81f4f8ced362af2417a8a07ade367.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Georgia", serif;
+  color: #ffcc66 !important;
+  margin: 0;
+  padding: 0;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: -1;
+}
+
+/* === Scrollbar === */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: rgba(0,0,0,0.6); }
+::-webkit-scrollbar-thumb { background: #ffcc66; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: #ffd98c; }
+
+/* === Navbar === */
+.navbar.navbar-default {
+  background: rgba(0,0,0,0.75);
+  border-bottom: 2px solid #ffcc66;
+  border-radius: 0;
+  margin-bottom: 15px;
+}
+.navbar-brand img { filter: brightness(1.2) drop-shadow(0 0 4px #000); }
+.navbar-nav > li > a {
+  color: #ffcc66 !important;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000;
+  transition: 0.3s;
+}
+.navbar-nav > li > a:hover {
+  color: #fff2b3 !important;
+  text-shadow: 0 0 6px #ffcc66;
+  background: rgba(255,204,102,0.1);
+  border-radius: 4px;
+}
+.navbar-toggle { border: 1px solid #ffcc66; background: rgba(0,0,0,0.6); }
+.navbar-toggle .icon-bar { background-color: #ffcc66; }
+
+/* === Topbar === */
+.container.topbar {
+  background: rgba(0,0,0,0.7);
+  border-bottom: 2px solid #ffcc66;
+  padding: 10px;
+  border-radius: 6px;
+}
+.welcomeback { color: #ffcc66 !important; font-weight: bold; text-shadow: 1px 1px 2px #000; }
+.toplinks li a { color: #ffcc66 !important; transition: 0.3s; }
+.toplinks li a:hover { color: #fff2b3 !important; text-shadow: 0 0 6px #ffcc66; }
+.toplinks .icon { filter: brightness(1.2); margin-right: 4px; }
+#silverBeetlesAmt, #goldBeetlesAmt { color: #ffd98c !important; font-weight: bold; text-shadow: 1px 1px 2px #000; }
+
+/* === Page Container === */
+#pageContainer {
+  background: rgba(0,0,0,0.6);
+  border: 2px solid #ffcc66;
+  border-radius: 8px;
+  padding: 15px;
+  color: #ffcc66 !important;
+  text-shadow: 1px 1px 2px #000;
+}
+.breadcrumb, .breadcrumb-item a { color: #ffcc66 !important; text-shadow: 1px 1px 2px #000; }
+.breadcrumb-item.active { color: #ffd98c !important; }
+.alert { background: rgba(0,0,0,0.7); border: 1px solid #ffcc66; color: #ffcc66 !important; border-radius: 6px; }
+
+/* === Headings === */
+h1, h2, h3 {
+  color: #ffd98c !important;
+  text-shadow: 2px 2px 6px #000;
+  font-family: "Cinzel", serif;
+}
+h1.center {
+  background: rgba(0,0,0,0.7);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+/* === Paragraphs & Rules === */
+p, .b, .xsmall, .small {
+  color: #ffcc66 !important;
+  text-shadow: 1px 1px 2px #000;
+  background: rgba(0,0,0,0.4);
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* === Links === */
+a { color: #ffcc66 !important; text-decoration: none; transition: 0.3s; }
+a:hover { color: #fff2b3 !important; text-shadow: 0 0 6px #ffcc66; }
+
+/* === Lion Table === */
+#pride {
+  background: rgba(0,0,0,0.7);
+  border: 2px solid #ffcc66;
+  border-radius: 8px;
+  color: #ffcc66 !important;
+}
+#pride th {
+  background: rgba(255,204,102,0.2);
+  color: #ffd98c !important;
+  text-shadow: 1px 1px 2px #000;
+  padding: 8px;
+}
+#pride td {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  color: #ffcc66 !important;
+  padding: 6px;
+}
+#pride tr:hover { background: rgba(255,204,102,0.1); }
+
+/* === Buttons === */
+input[type="submit"], button {
+  background: linear-gradient(to bottom, #222, #000);
+  color: #ffcc66 !important;
+  border: 1px solid #ffcc66;
+  border-radius: 5px;
+  padding: 5px 12px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+input[type="submit"]:hover, button:hover {
+  background: linear-gradient(to bottom, #444, #222);
+  color: #fff2b3 !important;
+}
+
+/* === Lion Image Block (Replaced with Static Image) === */
+.lion-image-block {
+  background: rgba(0,0,0,0.6);
+  border: 2px solid #ffcc66;
+  border-radius: 8px;
+  padding: 8px;
+  display: inline-block;
+  box-shadow: 0 0 12px rgba(255,204,102,0.3);
+}
+.lion-image-block img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* === Sidebar === */
+#pageSidebar {
+  background: rgba(0,0,0,0.6);
+  border: 2px solid #ffcc66;
+  border-radius: 8px;
+  padding: 10px;
+  color: #ffcc66 !important;
+  text-shadow: 1px 1px 2px #000;
+}
+#pageSidebar .panel {
+  background: rgba(0,0,0,0.5);
+  border: 1px solid #ffcc66;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+#pageSidebar .panel-body { color: #ffcc66 !important; text-shadow: 1px 1px 2px #000; }
+#pageSidebar h3 {
+  color: #ffd98c !important;
+  text-shadow: 2px 2px 6px #000;
+  border-bottom: 1px solid rgba(255,204,102,0.4);
+  padding-bottom: 4px;
+}
+#pageSidebar a { color: #ffcc66 !important; transition: 0.3s; }
+#pageSidebar a:hover { color: #fff2b3 !important; text-shadow: 0 0 6px #ffcc66; }
+#pageSidebar .progress {
+  background: rgba(0,0,0,0.4);
+  border: 1px solid #ffcc66;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+#pageSidebar .progress-bar {
+  background: linear-gradient(to right, #ffcc66, #ffd98c);
+  color: #000;
+  font-weight: bold;
+}
+#pageSidebar b { color: #ffd98c !important; text-shadow: 1px 1px 2px #000; }
+#btnToggleSidebarChat {
+  background: #222;
+  color: #ffcc66 !important
